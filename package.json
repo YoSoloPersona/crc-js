@@ -1,0 +1,23 @@
+{
+  "name": "crc-js",
+  "version": "1.0.0",
+  "description": "Module for calculating cyclic checksums.",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "generate doc": "typedoc --tsconfig ./tsconfig.json",
+    "test": "jasmine --config=spec/support/jasmine.json"
+  },
+  "private": "false",
+  "author": "Yolik",
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "eslint": "^7.12.1",
+    "typescript": "^4.0.5",
+    "@types/jasmine": "^4.0.3",
+    "jasmine": "^4.1.0",
+    "typedoc": "^0.22.15"
+  }
+}
