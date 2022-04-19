@@ -115,7 +115,7 @@ export function crc32IEEE(buffer: Uint8Array, crc = 0): bigint {
 		crc = tableCrc32IEEE[(crc & 0xFF) ^ buffer[offset]] ^ (crc >>> 8);
 	}
 
-	return crc >= 0 ? BigInt(crc) : BigInt(crc ^ 0x80000001) ^ 0x80000000n + 1n;
+	return crc >= 0 ? BigInt(crc) : BigInt(crc ^ 0x80000001) ^ BigInt(0x80000000) + BigInt(1);
 }
 
 /**
@@ -124,7 +124,7 @@ export function crc32IEEE(buffer: Uint8Array, crc = 0): bigint {
  * @param crc initializable value.
  * @returns calclulated crc value.
  */
-export function crc32IEEEi(buffer: Uint8Array, crc = 0) {
+export function crc32IEEEi (buffer: Uint8Array, crc = 0) {
 	crc = crc ^ 0xFFFFFFFF;
 
 	for (let offset = 0; offset < buffer.byteLength; offset++) {
@@ -133,5 +133,5 @@ export function crc32IEEEi(buffer: Uint8Array, crc = 0) {
 
 	crc ^= 0xFFFFFFFF;
 
-	return crc > 0 ? BigInt(crc) : BigInt(crc ^ 0x80000001) ^ 0x80000000n + 1n;
+	return crc > 0 ? BigInt(crc) : BigInt(crc ^ 0x80000001) ^ BigInt(0x80000000) + BigInt(1);
 }
