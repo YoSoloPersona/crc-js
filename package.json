@@ -12,7 +12,14 @@
     "test": "jasmine --config=spec/support/jasmine.json"
   },
   "private": "false",
-  "author": "Yolik",
+  "author": {
+    "name": "yolik",
+    "email": "yo.solo.persona@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YoSoloPersona/yo-crc-js"
+  },
   "devDependencies": {
     "@types/jasmine": "^4.0.3",
     "@types/node": "^12.12.14",
