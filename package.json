@@ -1,6 +1,6 @@
 {
-  "name": "crc-js",
-  "version": "1.0.0",
+  "name": "yo-crc-js",
+  "version": "1.0.1",
   "description": "Module for calculating cyclic checksums.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
