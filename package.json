@@ -11,7 +11,6 @@
     "generate doc": "typedoc --tsconfig ./tsconfig.json",
     "test": "jasmine --config=spec/support/jasmine.json"
   },
-  "private": "false",
   "author": {
     "name": "yolik",
     "email": "yo.solo.persona@gmail.com"
